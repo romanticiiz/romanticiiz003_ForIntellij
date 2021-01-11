@@ -5,16 +5,17 @@ import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
+
     @Test
     public void 롬복_기능_테스트() {
-        // given
+        //given
         String name = "test";
         int amount = 1000;
 
-        // when
+        //when
         HelloResponseDto dto = new HelloResponseDto(name, amount);
 
-        // then
+        //then
         assertThat(dto.getName()).isEqualTo(name);
         assertThat(dto.getAmount()).isEqualTo(amount);
     }
